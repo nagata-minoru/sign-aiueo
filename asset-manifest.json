@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sign-aiueo/static/css/main.f855e6bc.css",
-    "main.js": "/sign-aiueo/static/js/main.904155b8.js",
+    "main.js": "/sign-aiueo/static/js/main.d6be6f41.js",
     "index.html": "/sign-aiueo/index.html",
     "main.f855e6bc.css.map": "/sign-aiueo/static/css/main.f855e6bc.css.map",
-    "main.904155b8.js.map": "/sign-aiueo/static/js/main.904155b8.js.map"
+    "main.d6be6f41.js.map": "/sign-aiueo/static/js/main.d6be6f41.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.904155b8.js"
+    "static/js/main.d6be6f41.js"
   ]
 }
