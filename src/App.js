@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 
 const signImages = {
-  'あ': '/signs/a.png',
-  'い': '/signs/i.png',
-  'う': '/signs/u.png',
-  'え': '/signs/e.png',
-  'お': '/signs/o.png'
+  'あ': './signs/a.png',
+  'い': './signs/i.png',
+  'う': './signs/u.png',
+  'え': './signs/e.png',
+  'お': './signs/o.png'
 };
 
 function App() {
