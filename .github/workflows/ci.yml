@@ -1,4 +1,4 @@
-# main への push と PR ごとに、テストとビルドが通るか確認する
+# main への push と PR ごとに、lint・テスト・ビルドが通るか確認する
 # main への push では、続けて GitHub Pages へデプロイする
 name: CI
 
@@ -20,6 +20,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run lint
       - run: npm test
       - run: npm run build
       - if: github.event_name == 'push'
