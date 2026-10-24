@@ -35,6 +35,12 @@ npm run build
 npm test
 ```
 
+### lint
+
+```bash
+npm run lint
+```
+
 ### GitHub Pages へのデプロイ
 
 `main` ブランチに push すると、GitHub Actions がテストとビルドを行い、成功すれば GitHub Pages へ自動でデプロイします。
@@ -44,3 +50,4 @@ npm test
 - React 19
 - Vite
 - Vitest + Testing Library
+- ESLint
