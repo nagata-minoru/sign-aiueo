@@ -1,4 +1,5 @@
 # main への push と PR ごとに、テストとビルドが通るか確認する
+# main への push では、続けて GitHub Pages へデプロイする
 name: CI
 
 on:
@@ -21,3 +22,24 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: build
+
+  deploy:
+    if: github.event_name == 'push'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

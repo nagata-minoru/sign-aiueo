@@ -31,9 +31,7 @@ npm run build
 
 ### GitHub Pages へのデプロイ
 
-```bash
-npm run deploy
-```
+`main` ブランチに push すると、GitHub Actions がテストとビルドを行い、成功すれば GitHub Pages へ自動でデプロイします。
 
 ## 技術スタック
 

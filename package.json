@@ -9,8 +9,6 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,8 +35,7 @@
   "devDependencies": {
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^7.0.1",
-    "@testing-library/react": "^16.3.3",
-    "gh-pages": "^6.3.0"
+    "@testing-library/react": "^16.3.3"
   },
   "homepage": "https://nagata-minoru.github.io/sign-aiueo"
 }
