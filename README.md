@@ -16,10 +16,10 @@ https://nagata-minoru.github.io/sign-aiueo
 ### 開発サーバーの起動
 
 ```bash
-npm start
+npm run dev
 ```
 
-ブラウザで http://localhost:3000 を開くと確認できます。
+ブラウザで http://localhost:5173 を開くと確認できます。
 
 ### ビルド
 
@@ -27,7 +27,13 @@ npm start
 npm run build
 ```
 
-`build` フォルダにプロダクション用のファイルが生成されます。
+`dist` フォルダにプロダクション用のファイルが生成されます。
+
+### テスト
+
+```bash
+npm test
+```
 
 ### GitHub Pages へのデプロイ
 
@@ -36,4 +42,5 @@ npm run build
 ## 技術スタック
 
 - React 19
-- Create React App
+- Vite
+- Vitest + Testing Library
