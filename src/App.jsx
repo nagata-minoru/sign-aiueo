@@ -9,7 +9,7 @@ const signImages = {
   'お': './signs/o.png'
 };
 
-function App() {
+const App = () => {
   const [currentSign, setCurrentSign] = useState('あ');
 
   const handleNext = () => {
@@ -29,6 +29,6 @@ function App() {
       <button onClick={handleNext}>次へ</button>
     </div>
   );
-}
+};
 
 export default App;
